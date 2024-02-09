@@ -1,0 +1,23 @@
+public class FirstLetterCapitalize {
+ 
+    public static void main(String[] args) {
+        // Declare variables and constant
+        String name = "", capName = "";
+        
+        // Create a Scanner object
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+        
+        // Prompt for user to enter a name     
+        System.out.print("Please enter a name: ");
+        
+        // Read the name entered by a user
+        name = sc.nextLine();
+        
+        // Capitalize to uppercase the first letter of a name 
+        capName = name.substring(0, 1).toUpperCase() + name.substring(1);
+        
+        // Display a name 
+        System.out.println("Capitalize name is " + capName);
+    }
+    
+}
